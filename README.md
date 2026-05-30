@@ -66,12 +66,3 @@ npm install
 **Contributing**
 - Make UI changes in `src/components/` and page logic in `src/pages/`.
 - Keep global design tokens in `src/index.css` (CSS variables) and prefer CSS Modules for component scope.
-
----
-
-If you want, I can:
-- Add badges or author/contact info
-- Generate a simple screenshot or demo GIF to include
-- Add a short `DEVELOPMENT.md` with style rules and component conventions
-
-Tell me which of these you'd like next.
