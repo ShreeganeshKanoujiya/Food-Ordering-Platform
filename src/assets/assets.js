@@ -1,0 +1,20 @@
+import dosa from './dosa.jfif'
+import idly from './idli.jpg'
+import vada from './vada.jfif'
+import rawa from './rawa-dosa.jpg'
+import mesur from "./mesur.jfif"
+import set from './SetDosa.jfif'
+import masalaUttapam from './MasalaUttapam.jfif'
+import onionUttapam from './OnionUttapam.jpg'
+import MysoreMasalaDosa from './MysoreMasalaDosa.jfif'
+import Pesarattu from './Pesarattu.jfif'
+import Pongal from './Pongal.jpg'
+import RagiDosa from './RagiDosa.jfif'
+import RavMasalaDosa from './RavMasalaDosa.jfif'
+import SetDosa from './SetDosa.jfif'
+import Uttapam from './Uttapam.jfif'
+import Upma from './Upma.jfif'
+import rawaIdli from './rawaIdli.jfif'
+import about from './about.jpg'
+
+export { dosa, idly, vada, rawa, mesur, set, masalaUttapam, onionUttapam, MysoreMasalaDosa, Pesarattu, Pongal, RagiDosa, RavMasalaDosa, SetDosa, Uttapam, rawaIdli, Upma, about }
