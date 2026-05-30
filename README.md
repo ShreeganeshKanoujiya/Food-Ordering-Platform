@@ -1,16 +1,77 @@
-# React + Vite
+# Food Ordering Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lightweight React + Vite web app for browsing dishes and placing orders (demo). This README explains how to run the project locally, where key files live, and CSS/Tailwind integration used across the codebase.
+**Tech stack**
+- React 19, Vite, Tailwind CSS (via `@tailwindcss/vite` plugin)
+- Simple CSS Modules for component-scoped styles
 
-Currently, two official plugins are available:
+**Quick start**
+1. Install dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+```
 
-## React Compiler
+2. Start dev server:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
+3. Build for production:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+```
+
+4. Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Default dev server: http://localhost:5173
+
+If `npm run dev` fails with CSS/build errors, try removing `node_modules` and reinstalling:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**Project structure (important files)**
+
+- `index.html` — app entry
+- `src/main.jsx` — React bootstrap
+- `src/App.jsx` — top-level routes / app layout
+- `src/index.css` — global CSS and Tailwind directives (@tailwind base/components/utilities)
+- `tailwind.config.cjs` — Tailwind content paths
+- `src/assets/*` — images and asset exports
+- `src/components/` — UI components
+	- `Card.jsx` + `card.module.css` — product cards and page layout
+	- `CartSidebar.jsx` + `cartSidebar.css` — cart sidebar and QR payment
+	- `Navbar.jsx`, `Footer.jsx` — layout components
+- `src/pages/` — page routes: `Webpage.jsx`, `About.jsx`, `Contact.jsx`, `Error.jsx`
+
+**CSS / Tailwind notes**
+- Tailwind utilities are enabled through `tailwind.config.cjs` and the plugin in `vite.config.js`.
+- Global variables and font import are in `src/index.css`. Component styles use CSS Modules (e.g. `card.module.css`) or plain CSS for small components (e.g. `cartSidebar.css`).
+- If you prefer not to use Tailwind, the app still uses component CSS files for layout.
+
+**Running & debugging tips**
+- Ensure Node.js is a recent LTS (16+ recommended). Some dev/build issues stem from incompatible Node versions.
+- If Tailwind classes don't appear, confirm `tailwind.config.cjs` content paths include `./src/**/*.{js,jsx,ts,tsx}` and that `src/index.css` includes the three `@tailwind` directives.
+- When editing CSS modules, restart the dev server only if Vite doesn't pick up the changes.
+
+**Contributing**
+- Make UI changes in `src/components/` and page logic in `src/pages/`.
+- Keep global design tokens in `src/index.css` (CSS variables) and prefer CSS Modules for component scope.
+
+---
+
+If you want, I can:
+- Add badges or author/contact info
+- Generate a simple screenshot or demo GIF to include
+- Add a short `DEVELOPMENT.md` with style rules and component conventions
+
+Tell me which of these you'd like next.
