@@ -1,0 +1,104 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.closeBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cartItem img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cartDetails {
+    flex: 1;
+}
+
+.removeBtn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.orderBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.orderBtn:hover {
+    background: darkblue;
+}
+
+.qrBox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrBox p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.qtyControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qtyControls button {
+    padding: 4px 10px;
+    border: none;
+    background: navy;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.qtyControls span {
+    font-weight: bold;
+}
