@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./../CSS/card.module.css";
+import style from "./card.module.css";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import CartSidebar from "./CartSidebar";

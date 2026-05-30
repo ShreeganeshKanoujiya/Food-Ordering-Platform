@@ -1,5 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Webpage from './pages/Webpage'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 
 function App() {
