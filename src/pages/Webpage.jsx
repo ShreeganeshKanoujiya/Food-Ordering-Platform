@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import style from './card.module.css'
-import Card from './Card'
+import style from '../components/card.module.css'
+import Card from '../components/Card'
 import { dosa, idly, vada, rawa, mesur, set, masalaUttapam, onionUttapam, MysoreMasalaDosa, Pesarattu, Pongal, RagiDosa, RavMasalaDosa, SetDosa, Uttapam, Upma, rawaIdli } from '../assets/assets'
 
 const Webpage = ({ cart, setCart }) => {

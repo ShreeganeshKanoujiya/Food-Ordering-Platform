@@ -4,7 +4,6 @@ import { about } from '../assets/assets'
 
 const About = () => {
     return (
-        <>
             <div className={style.mainContainer}>
                 <div className={style.about}>
                     <h1>About us</h1>
@@ -13,8 +12,6 @@ const About = () => {
                     <img src={about} alt='about us' />
                 </div>
             </div>
-
-        </>
     )
 }
 

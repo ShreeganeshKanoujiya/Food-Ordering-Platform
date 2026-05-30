@@ -28,7 +28,7 @@ const Card = ({cardData, cart, setCart}) => {
                 <h2 style={{textAlign: "center", margin: "20px 0"}}>No items found</h2> :
                 (cardData.map((i) => {
                     return <div className={style.card} key={i.id}>
-                        <h1 className={style.h1}>{i.name}</h1>
+                        <h1>{i.name}</h1>
                         <img src={i.img} alt={i.name} />
                         <div className={style.priceRow}>
                             <span className={style.priceLabel}>Price</span>

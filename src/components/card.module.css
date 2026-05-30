@@ -1,32 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-:root {
-  --bg: #faebd3;
-  /* very light warm background */
-  --surface: #ffffff;
-
-  --primary: #ff7a00;
-  /* vibrant orange */
-  --secondary: #e65c00;
-  /* deeper orange */
-  --accent: #ffb347;
-  /* soft orange highlight */
-
-  --text: #2b2b2b;
-  --muted: #6b6b6b;
-  --on-primary: #ffffff;
-
-  --input-border: #ffd1a3;
-
-  --footer-gradient-start: #cc5200;
-  --footer-gradient-mid: #e65c00;
-  --footer-gradient-end: #ff7a00;
-}
+/* Component-scoped styles for cards, forms, footer, etc. */
 
 .main {
   width: 100%;
@@ -201,16 +173,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  padding: 48px 16px;
   background: var(--bg);
-  font-family: Arial, sans-serif;
 }
-
 
 .form {
   background: var(--surface);
   padding: 30px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(16, 42, 104, 0.06);
 }
